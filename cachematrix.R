@@ -1,8 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## Write a short comment describing this function
-## this function just check if the matrix is square, the rest is the same as the example function
+## this function is a tool to cache the inverse of a matrix, it creates four methods to set,get a matrix
+## or to set,get the inverse of this matrix. It stores m which will be the inverse matrix
 
 makeCacheMatrix <- function(x = matrix()) {
   if (nrow(x)!=ncol(x)) {
@@ -24,8 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-## the only difference with cacheMean is that m solve data
+## this function return the inverse of a matrix. It checks first
+##if it has been already calculate and store within makeCacheMAtrix or it calculates it
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
